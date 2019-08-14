@@ -1,6 +1,7 @@
 {
     "name": "jnolbertovm/template-upch",
     "description": "Institutional HTML template of the UPCH",
+    "version": "1.0.0",
     "type": "template",
     "license": "MIT",
     "authors": [
@@ -27,5 +28,10 @@
     },
     "require-dev": {
         "twbs/bootstrap": "4.3.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
     }
 }
