@@ -1,7 +1,6 @@
 {
     "name": "jnolbertovm/template-upch",
     "description": "Institutional HTML template of the UPCH",
-    "version": "1.0.0",
     "type": "template",
     "license": "MIT",
     "authors": [
@@ -10,7 +9,7 @@
             "email": "jnolbertovm@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "npm-asset/jquery": "^3.4",
