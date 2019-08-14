@@ -1,0 +1,98 @@
+.upch-content-table{
+  border: 1px solid $border-color !important;
+  border-radius: $border-radius;
+  .upch-content-table__header{
+    border-bottom: 1px solid $border-color !important;
+    padding: 15px 20px;
+  }
+  .upch-content-table__title{
+  }
+}
+
+.upch-table {
+  border: 1px solid $border-color;
+  &__header {
+    td,
+    th{
+      color: $primary;
+      font-size: $font-size-base;
+      padding: 8px 0px !important;
+      div{
+        font-weight: $font-weight-bold;
+      }
+    }
+
+  }
+  &__body,tbody{
+    tr{
+      @include hover-focus() { background-color: rgba($primary, .15); }
+    }
+    td{
+      font-size: $font-size-base;
+      border-left: 0;
+      padding: 15px 10px;
+      vertical-align: middle;
+    }
+  }
+  @each $color, $value in $theme-colors {
+    &.upch-table--#{$color} {
+      .upch-table__header {
+        td,th{
+          background-color: $value !important;
+        }
+      }
+    }
+  }
+}
+
+.bootstrap-table {
+  .fixed-table-container {
+    .fixed-table-header{
+      padding: 0px 10px;
+      border-top: 1px solid $border-color !important;
+      border-bottom: 1px solid $border-color !important;
+      .upch-table{
+        border: 0px !important;
+        &__header {
+          td,
+          th {
+            border: 0px !important;
+          }
+        }
+      }
+    }
+    .fixed-table-body {
+      .upch-table {
+        border: 0px !important;
+      }
+    }
+
+    @include media-breakpoint-down(sm){
+      .fixed-table-header{
+        padding: 0px;
+      }
+    }
+  }
+  .fixed-table-toolbar{
+    padding:10px 20px;
+  }
+  .fixed-table-pagination{
+    background-color: $gray-100;
+    border-top: 1px solid $border-color !important;
+    padding:10px 20px;
+    .pagination{
+      .page-item{
+        a{
+          color: $primary;
+        }
+        &.active{
+          a{
+            background-color: $primary;
+            color: $white;
+            @include hover-focus() { background-color: darken($primary,10%) }
+          }
+        }
+      }
+    }
+  }
+}

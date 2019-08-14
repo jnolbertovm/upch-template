@@ -1,0 +1,71 @@
+.upch-modal{
+  background-color: transparent;
+
+  &__content{
+    background-color: transparent;
+  }
+
+  &__header{
+
+    background-color: $gray-800;
+    color: $white;
+
+    &--primary{
+      background-color: $primary;
+    }
+    &--secondary{
+      background-color: $secondary;
+    }
+    &--success{
+      background-color: $success;
+    }
+    &--danger{
+      background-color: $danger;
+    }
+    &--warning{
+      background-color: $warning;
+    }
+    &--info{
+      background-color: $info;
+    }
+    &--indigo{
+      background-color: $indigo;
+    }
+    &--purple{
+      background-color: $purple;
+    }
+    &--pink{
+      background-color: $pink;
+    }
+    &--teal{
+      background-color: $teal;
+    }
+    &--orange{
+      background-color: $orange;
+    }
+  }
+
+  &__body{
+    background-color: $white;
+  }
+
+  &__footer{
+    background-color: $gray-200;
+    display: flex;
+  }
+
+  &__close{
+    color: $white;
+    &:hover{
+      color: $white;
+    }
+  }
+
+  &__title{
+    color: $white;
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(darken($gray-900, 8%), .4);
+}

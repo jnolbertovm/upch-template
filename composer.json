@@ -1,0 +1,31 @@
+{
+    "name": "jnolbertovm/template-upch",
+    "description": "Institutional HTML template of the UPCH",
+    "type": "template",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nolberto Vilchez",
+            "email": "jnolbertovm@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "npm-asset/jquery": "^3.4",
+        "npm-asset/moment": "^2.24",
+        "npm-asset/perfect-scrollbar": "^1.4",
+        "npm-asset/feather-icons": "^4.21",
+        "npm-asset/js-cookie": "^2.2",
+        "npm-asset/bootstrap": "4.3.1",
+        "npm-asset/fortawesome--fontawesome-free": "^5.10",
+        "npm-asset/ionicons": "^4.5",
+        "npm-asset/bootstrap-table": "^1.15",
+        "npm-asset/axios": "^0.19.0",
+        "npm-asset/prismjs": "1.16.0",
+        "npm-asset/components-jqueryui": "^1.12"
+    },
+    "require-dev": {
+        "twbs/bootstrap": "4.3.1"
+    }
+}

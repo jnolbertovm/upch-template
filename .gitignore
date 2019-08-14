@@ -1,0 +1,14 @@
+### Composer ###
+composer.phar
+composer.lock
+/vendor/
+
+### Dependency directories ##
+/node_modules/
+package-lock.json
+
+### lock ###
+*.lock
+
+### Netbeans ###
+nbproject/*

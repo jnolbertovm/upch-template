@@ -1,0 +1,92 @@
+.aside {
+  &.upch-sidebar-menu{
+    .aside-header {
+    }
+    .aside-body{
+      border-right-color: $white;
+      .nav-aside {
+        .nav-item {
+          a {
+            &.active{
+              color: $primary;
+              svg{
+                color: $primary;
+                fill: $white;
+              }
+              &::before {
+                width: 100%;
+                content: " ";
+                background-color: rgba($primary, .15);
+                border-radius: 0px 15px 15px 0px;
+                border-left-color: $primary;
+              }
+            }
+          }
+
+          .active a {
+            color: $primary;
+          }
+
+          @include hover-focus() { color: $primary; }
+        }
+      }
+      .aside-app{
+        margin-bottom: 2rem;
+        .aside-app__button{
+          padding: 10px 15px;
+          @include border-radius(24px);
+          border:1px solid $border-color;
+          @extend .shadow-sm;
+          @include hover-focus() { @extend .shadow; }
+        }
+      }
+
+    }
+    /*    .aside-footer{
+          background-color: $primary;
+          position: relative;
+          padding: 10px 25px 10px 25px;
+          height: 105px;
+          border-right: 1px solid $border-color;
+          border-right: 1px solid $white;
+          border-top: 1px solid darken($upch-primary,10%);
+          a{
+            color: $white;
+          }
+          .aside-menu-link{
+            
+            span{
+              font-weight: $font-weight-semibold;
+            }
+    
+            svg.feather-arrow-right-circle{
+              display: none;
+            }
+            .aside-menu-link-minimize{
+              display: none;
+            }
+          }
+    
+        }*/
+
+    /*    &.minimize {
+          .aside-footer{
+            padding: 10px 20px 10px 20px;
+            .aside-menu-link{
+              svg.feather-arrow-left-circle{
+                display: none;
+              }
+              svg.feather-arrow-right-circle{
+                display: block;
+              }
+              span:not(.aside-menu-link-minimize){
+                display: none;
+              }
+              .aside-menu-link-minimize{
+                display: block;
+              }
+            }
+          }
+        }*/
+  }
+}

@@ -1,0 +1,51 @@
+.upch-breadcrumb {
+  padding-bottom: 10px;
+  /*@extend .border-bottom;*/
+  .breadcrumb-item{
+    font-size: .8rem;
+    a:not(.dropdown-item){
+      color: $body-color;
+      padding:5px 10px;
+      @include hover-focus() { 
+        color: $primary;
+        background-color: rgba($primary, .15);
+        @include border-radius(5px);
+      }
+    }
+
+    &.active{color: $primary;}
+    + .breadcrumb-item::before { color: $body-color; }
+  }
+}
+
+.upch-container{
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.upch-content{
+  padding: 0;
+  @extend .ht-100v;
+
+  &-body{
+    padding: 0;
+  }
+
+  &-breadcrumb{
+    padding: 25px;
+  }
+
+  &-title{
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1.5rem;
+
+    &__main{
+      margin-bottom: .25rem;
+    }
+
+    &__secondary{
+      margin-bottom: 0;
+      font-weight: 400;
+      color: $body-color;
+    }
+  }
+}

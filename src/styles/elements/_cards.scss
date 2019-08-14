@@ -1,0 +1,5 @@
+.card {
+  margin-bottom: 1rem;
+  border-color: $border-color;
+  @include border-radius(8px);
+}
